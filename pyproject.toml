@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hm-recsys"
+version = "0.1.0"
+description = "Leakage-safe H&M recommendation baseline"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "pillow>=10,<13",
+  "torch==2.7.0",
+  "torchvision==0.22.0",
+  "transformers==4.57.6",
+  "python-dotenv>=1.0,<2",
+  "kaggle>=1.6.17,<2",
+  "duckdb>=1.4,<2",
+  "lightgbm>=4.6,<5",
+  "gensim>=4.4,<5",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.1",
+  "joblib>=1.4,<2",
+  "threadpoolctl>=3.5,<4",
+]
+
+[project.scripts]
+hm-recsys = "hm_recsys.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

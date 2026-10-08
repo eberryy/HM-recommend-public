@@ -1,0 +1,30 @@
+{
+  "status": "historical_measured_results_not_rerun_for_export",
+  "content_retrieval": {
+    "source_report": "M4_3_metrics.json",
+    "cutoffs": [
+      "2020-01-22",
+      "2020-03-18",
+      "2020-06-24",
+      "2020-08-19"
+    ],
+    "candidate_budget": "Warm baseline union with up to 50 content candidates before deduplication",
+    "population": "users with next-week strict-cold truth; within-window user macro recall, then equal-window mean",
+    "raw_fashionclip_recall": 0.027871405321337386,
+    "multimodal_student_recall": 0.039312194329756495
+  },
+  "candidate_ranking": {
+    "source_report": "F70_EXPLAINABILITY_AUDIT.md",
+    "population": "future-positive user-item pairs already present in complete Cold50; four development windows pooled",
+    "sparse_1_to_5": {
+      "positive_pairs": 104,
+      "baseline_top5_hits": 43,
+      "f70_top5_hits": 90
+    },
+    "strict_cold": {
+      "positive_pairs": 160,
+      "baseline_top5_hits": 22,
+      "f70_top5_hits": 16
+    }
+  }
+}

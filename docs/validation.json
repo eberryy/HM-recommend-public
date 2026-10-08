@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-08",
+  "runtime": "existing project Conda environment; PyTorch 2.7.0+cu128",
+  "test_command": "PYTHONPATH=src python -m unittest discover -s tests",
+  "tests_run": 773,
+  "passed": 719,
+  "skipped": 54,
+  "errors": 0,
+  "failures": 0,
+  "skip_scope": "optional original research contracts, checkpoints, and other pre-existing optional checks; skip reasons are visible in verbose unittest output",
+  "synthetic_demo": {
+    "command": "PYTHONPATH=src python -m hm_recsys.cli validate --transactions examples/demo_transactions.csv --cutoff 2020-09-01 --sample-rate 1 --history-weeks 8 --candidate-k 20 --output-dir artifacts/demo",
+    "history_rows": 5,
+    "validation_rows": 3,
+    "validation_users": 3,
+    "candidate_recall_at_20": 0.6666666666666666,
+    "map_at_12": 0.6666666666666666
+  },
+  "not_verified": [
+    "fresh dependency installation on a clean computer",
+    "reproduction of original large-scale training and evaluation"
+  ]
+}

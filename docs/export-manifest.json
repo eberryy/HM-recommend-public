@@ -1,0 +1,88 @@
+{
+  "export_date": "2026-10-08",
+  "history": "new root commit; original Git history excluded",
+  "included": [
+    "Python source including current integration modules",
+    "Python tests",
+    "synthetic example",
+    "dependency configuration",
+    "GPU probe",
+    "manually selected aggregate evidence",
+    "two CPU-only export/mechanics Python scripts used by tests; server shell wrappers excluded"
+  ],
+  "excluded": [
+    "credentials and local environment",
+    "raw and derived datasets",
+    "models and embeddings",
+    "per-user predictions and submission archives",
+    "original reports and resume",
+    "server handoffs and SSH launchers",
+    "local agent instructions and attachments",
+    "workspace migration scripts"
+  ],
+  "path_adjusted_files": [
+    "src/hm_recsys/final_history_rebuild.py",
+    "src/hm_recsys/m311_cli.py",
+    "src/hm_recsys/m311b_cli.py",
+    "src/hm_recsys/m4_cli.py",
+    "src/hm_recsys/m53_cli.py",
+    "src/hm_recsys/m54_cli.py",
+    "src/hm_recsys/m55_cli.py",
+    "src/hm_recsys/m5_cli.py",
+    "src/hm_recsys/mind_warm_final_confirmation.py",
+    "src/hm_recsys/mind_warm_ranking.py",
+    "src/hm_recsys/p33_cli.py",
+    "src/hm_recsys/p37b_cli.py",
+    "src/hm_recsys/p3_cli.py",
+    "src/hm_recsys/p40_cli.py",
+    "src/hm_recsys/p41a.py",
+    "src/hm_recsys/p42f_contract.py",
+    "src/hm_recsys/p42g_contract.py",
+    "src/hm_recsys/p42h_contract.py",
+    "src/hm_recsys/p43a_contract.py",
+    "src/hm_recsys/warm_v2_fresh.py",
+    "src/hm_recsys/warm_v2_fresh_close.py",
+    "src/hm_recsys/warm_v2_fresh_preflight.py",
+    "src/hm_recsys/warm_v2_fresh_review.py",
+    "src/hm_recsys/warm_v2_recent_data.py",
+    "src/hm_recsys/warm_v3_common.py",
+    "src/hm_recsys/warm_v3_finalize.py",
+    "src/hm_recsys/warm_v3_graph.py",
+    "src/hm_recsys/warm_v3_lightgcn.py",
+    "src/hm_recsys/warm_v3_sequence.py",
+    "src/hm_recsys/warm_v3_userknn.py"
+  ],
+  "archival_constraints": "Historical runners retain frozen branch/commit/contracts and require private artifacts; this export does not make those experiments runnable from scratch.",
+  "asset_dependent_test_targets": {
+    "test_p42_contract.py": [
+      "P42ContractTest"
+    ],
+    "test_p42r_contract.py": [
+      "P42RContractTest"
+    ],
+    "test_p42r2_contract.py": [
+      "P42R2ContractTest"
+    ],
+    "test_p42r3_contract.py": [
+      "P42R3ContractTest"
+    ],
+    "test_p43a_c.py": [
+      "CTests"
+    ],
+    "test_p43a_run.py": [
+      "test_D_eight_configs_equal_frozen_contract"
+    ],
+    "test_warm_v2_recent.py": [
+      "test_shift_only_training_no_overlap"
+    ],
+    "test_warm_v3_lightgcn.py": [
+      "test_explicit_outer_cutoff_extension_is_exact_and_parameter_frozen"
+    ],
+    "test_warm_v3_multiview_joint.py": [
+      "test_all_inner_lightgcn_caches_are_exact_and_complete"
+    ],
+    "test_warm_v3_temporal_ensemble.py": [
+      "TemporalEnsembleTests"
+    ]
+  }
+}

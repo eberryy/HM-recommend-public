@@ -1,0 +1,20 @@
+# Runtime dependencies for the M0/MVP pipeline.
+# Python itself is pinned by the Conda create command in README.md.
+numpy>=1.26,<3
+pandas>=2.2,<3
+pillow>=10,<13
+# M2.4 local GPU smoke; install torch wheels from the official CUDA 12.8 index.
+torch==2.7.0
+torchvision==0.22.0
+transformers==4.57.6
+python-dotenv>=1.0,<2
+kaggle>=1.6.17,<2
+duckdb>=1.4,<2
+lightgbm>=4.6,<5
+gensim>=4.4,<5
+# P4.2: two fixed L2 logistic propensity models and exact matching.
+scikit-learn==1.8.0
+scipy==1.17.1
+# Isolated Warm-v2 learned user-item feature; Windows uses the CPU wheel.
+implicit==0.7.3
+threadpoolctl==3.6.0
